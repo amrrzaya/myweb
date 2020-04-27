@@ -1,126 +1,158 @@
-.container {
-    width: 100%;
-    border: 1px solid white;
-  position: relative;
-}
-
-header{
-    padding: 1em;
+b{
+    text-align: center;
+    font-family: webkit pictograph;
+    border-bottom: 2px solid #282828;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 40px;
+  }
+  .container {
+      width: 100%;
+      border: 1px solid white;
+    position: relative;
+  }
+  
+  header{
     color: black;
-    clear: left;
     text-align: center;
-    font-family: 'Open Sans',Arial,Helvetica,'sans-serif';
-}
-.subheader{
-    padding: 1em;
-    color: white;
-    background-color: #090909;
-    clear: left;
-    text-align: left;
-    font-family: 'Open Sans',Arial,Helvetica,'sans-serif';
-}
-footer{
-    padding: 1em;
-    color: white;
-    background-color: black;
-    clear: left;
-    text-align: center;
-    height: 400px;
-}
-nav {
-    float: left;
+  }
+  
+  
+  .subheader{
+      padding: 1em;
+      height: 1cm;
+      background-color: #ff99bb;
+      text-align: left;
+      position: fixed;
+      left: 3px;
+      width: 100%;
+  }
+  
+  footer{
+      padding: 1em;
+      color: white;
+      background-color: black;
+      clear: left;
+      text-align: center;
+      height: 280px;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+  }
+  nav {
+      float: left;
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+  }
+  
+  
+  nav a {
+      font-family: 'Open Sans',Arial,Helvetica,'sans-serif';
+      font-size: 15px;
+      text-decoration: none;
+  
+   }  
+  nav a:link {
+      color: black;
+  }
+  
+  nav a:hover {
+      color: hotpink;
+  }
+  
+  article {
+      width: 100%;
+      padding: 10px;
+      float: left;
+      overflow: hidden;
+  }
+  .image {
+    display: block;
+    width: 90%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
     width: 100%;
-    text-align: center;
-    padding: 20px;
-}
-
-
-nav a {
-    font-family: 'Open Sans',Arial,Helvetica,'sans-serif';
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #fcbaef;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
     font-size: 20px;
-    text-decoration: none;
-
- }  
-nav a:link {
-    color: #609af7;
-}
-
-nav a:hover {
-    color: hotpink;
-}
-
-article {
-    width: 100%;
-    padding: 10px;
-    float: left;
-    overflow: hidden;
-}
-.image {
-  display: block;
-  width: 90%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .about{
+    background-image: url("background.jpg");
+  
+  }
+  h1{
+    font-family: 'Open Sans',Arial,Helvetica,'sans serif';
+    padding-left: 20px;
+    text-align: center;
+  }
+  h4{
+    font-family: 'Open Sans',Arial,Helvetica,'sans-serif';
+    padding-left: 20px;
+  }
+  hr {
+  border-top: 2px solid #e6e6e6;
   width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #fcbaef;
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-.about{
-  background-image: url("background.jpg");
-
-}
-h1{
-  font-family: 'Open Sans',Arial,Helvetica,'sans serif';
-  padding-left: 20px;
-}
-h4{
-  font-family: 'Open Sans',Arial,Helvetica,'sans-serif';
-  padding-left: 20px;
-}
-hr {
-border-top: 2px solid #e6e6e6;
-width: 100%;
-float: left;
-}
-footer a:link {
-    color: white;
-    size: 30px;
-}
-footer a:hover {
+  float: left;
+  }
+  footer a:link {
+      color: white;
+      size: 30px;
+  }
+  footer a:hover {
+      color: hotpink;
+  }
+  p{
+      font-family: 'pt_serifitalic';
+      font-size: 18px;
+      color: white;
+      text-align: center;
+  }
+  article p{
+    color: #66686b;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: italic;
+  }
+  .form-control{
+    background-color: #cccccc; 
+  }
+  a:link {
+    color: black;
+  }
+  
+  a:visited {
+    color: black;
+  }
+  
+  a:hover {
     color: hotpink;
-}
-p{
-    font-family: 'pt_serifitalic';
-    font-size: 18px;
-    color: white;
-}
-article p{
-  color: #66686b;
-  padding: 20px;
-  font-size: 20px;
-  text-align: center;
-  text-decoration: italic;
-}
+  }
+  
+  a:active {
+    color: hotpink;
+  }
